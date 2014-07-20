@@ -2,6 +2,8 @@
 
 class HomeController extends BaseController {
 
+	protected $layout = 'layouts.master';
+
 	/*
 	|--------------------------------------------------------------------------
 	| Default Home Controller
@@ -15,9 +17,9 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function home()
 	{
-		return View::make('hello');
+		return View::make('home.home');
 	}
 
 }
