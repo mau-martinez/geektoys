@@ -27,7 +27,16 @@
   </head>
   <body>
     @include('includes.header')
-
+      
+    <!-- Page title -->
+    <div class="page-title">
+      <div class="container">
+        @yield('page-title')
+        <hr />
+      </div>
+    </div>
+    <!-- Page title -->
+    
     <!-- Page content -->
     <div class="page-content">
       <div class="container">
@@ -36,11 +45,12 @@
         </div>
       </div>
     </div>
-      
+    <!-- Page content -->
+
     @include('includes.footer')
       
     <!-- Scroll to top -->
-    <span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span> 
+    <span class="totop"><a href="#"><i class="fa fa-chevron-up"></i></a></span> 
 
     {{ HTML::script('js/jquery.js') }}
     {{ HTML::script('js/bootstrap.min.js') }}
