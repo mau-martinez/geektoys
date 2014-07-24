@@ -13,3 +13,4 @@
 
 Route::get('/', array('as' => 'home', 'uses' => 'HomeController@home'));
 Route::get('/contactenos', array('as' => 'contact', 'uses' => 'HomeController@contact'));
+Route::get('/dev', 'DevController@index');
