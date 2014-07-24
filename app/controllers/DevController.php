@@ -2,8 +2,10 @@
 
 class DevController extends \BaseController {
 
+	protected $layout = 'layouts.master';
+
 	public function index()
 	{
-		return View::make('dev.index');
+		$this->layout->content = View::make('dev.index');
 	}
 }

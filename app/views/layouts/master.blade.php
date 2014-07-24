@@ -18,6 +18,7 @@
   <body>
     @include('includes.header')
       
+    @if (isset($__env->getSections()['page-title']))
     <!-- Page title -->
     <div class="page-title">
       <div class="container">
@@ -28,9 +29,10 @@
       </div>
     </div>
     <!-- Page title -->
+    @endif
     
     <!-- Page content -->
-    <div class="page-content">
+    <div class="page-content blocky">
       <div class="container">
         <div class="row">
         @yield('content')
