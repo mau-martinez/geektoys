@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.base')
 
 @section('title', 'La página solicitada no existe')
 

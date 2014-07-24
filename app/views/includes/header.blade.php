@@ -63,7 +63,7 @@
         <div class="navi">
           <div id="ddtopmenubar" class="mattblackmenu">
             <ul>
-              <li><a href="index.html">Inicio</a></li>
+              <li><a href="{{ URL::route('home') }}">Inicio</a></li>
               <!--
               <li><a href="#" rel="ddsubmenu1">Cuenta</a>
                 <ul id="ddsubmenu1" class="ddsubmenustyle">
