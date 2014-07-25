@@ -87,13 +87,12 @@
                 </ul>
               </li>
               -->
-              <li><a href="#" rel="ddsubmenu1">Categorías</a>
+
+              <li><a href="{{ URL::route('products') }}" rel="ddsubmenu1">Productos</a>
                 <ul id="ddsubmenu1" class="ddsubmenustyle">
-                  <li><a href="items.html">Juguetes</a></li>
-                  <li><a href="items.html">Electrónicos</a></li>
-                  <li><a href="items.html">Figuras</a></li>
-                  <li><a href="items.html">Juegos de mesa</a>
-                  <li><a href="items.html">Pedidos</a></li>
+                  @foreach ($categories as $category)
+                  <li><a href="{{ URL::route('products', array($category['slug'])) }}"> {{ $category['label'] }}</a></li>
+                  @endforeach
                 </ul>
               </li>                       
               <li><a href="{{ URL::route('contact') }}">Contáctenos</a></li>
