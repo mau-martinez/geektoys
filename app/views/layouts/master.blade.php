@@ -31,15 +31,30 @@
     <!-- Page title -->
     @endif
     
+    @if (isset($__env->getSections()['content']))
     <!-- Page content -->
     <div class="page-content blocky">
       <div class="container">
         <div class="row">
-        @yield('content')
+            @yield('content')
+        </div>
+        <div class="sep-bor"></div>
+      </div>
+    </div>
+    <!-- Page content -->
+    @endif
+    
+    @if (isset($__env->getSections()['shop-content']))
+    <!-- Page content -->
+    <div class="shop-items">
+      <div class="container">
+        <div class="row">
+            @yield('shop-content')
         </div>
       </div>
     </div>
     <!-- Page content -->
+    @endif
 
     @include('includes.footer')
       
