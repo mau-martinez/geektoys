@@ -4,11 +4,11 @@ class HomeController extends BaseController {
 
 	public function home()
 	{
-		return View::make('home.home');
+		$this->layout->content = View::make('home.home');
 	}
 
 	public function contact()
 	{
-		return View::make('home.contact');
+		$this->layout->content = View::make('home.contact');
 	}
 }

@@ -1,11 +1,7 @@
-@extends('layouts.base')
-
 @section('title', 'Contáctenos')
 
 @section('page-title')
-<!-- Page title -->
 <h2><i class="fa fa-envelope-o color"></i> Contáctenos</h2>
-<!-- Page title -->
 @stop
 
 @section('content')

@@ -1,0 +1,11 @@
+{{ HTML::script('js/jquery.js') }}
+{{ HTML::script('js/bootstrap.min.js') }}
+{{ HTML::script('js/ddlevelsmenu.js') }}
+{{ HTML::script('js/jquery.carouFredSel-6.2.1-packed.js') }}
+{{ HTML::script('js/jquery.countdown.min.js') }}
+{{ HTML::script('js/jquery.navgoco.min.js') }}
+{{ HTML::script('js/filter.js') }}
+{{ HTML::script('js/respond.min.js') }}
+{{ HTML::script('js/html5shiv.js') }}
+{{ HTML::script('js/custom.js') }}
+{{ HTML::script('js/bootstrap.min.js') }}

@@ -13,3 +13,8 @@
 
 Route::get('/', array('as' => 'home', 'uses' => 'HomeController@home'));
 Route::get('/contactenos', array('as' => 'contact', 'uses' => 'HomeController@contact'));
+Route::get('/ps/{category?}', array('as' => 'products', 'uses' => 'ProductsController@index'));
+Route::get('/p/{id?}', array('as' => 'product', 'uses' => 'ProductsController@show'));
+
+Route::get('/dev', 'DevController@index');
+

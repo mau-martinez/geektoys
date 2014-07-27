@@ -9,49 +9,58 @@
     <meta name="author" content="GeekToysCR">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600italic,600' rel='stylesheet' type='text/css'>
-
-    <!-- Styles -->
-    {{ HTML::style('css/bootstrap.min.css') }}
-    {{ HTML::style('css/animate.min.css') }}
-    {{ HTML::style('css/ddlevelsmenu-base.css') }}
-    {{ HTML::style('css/ddlevelsmenu-topbar.css') }}
-    {{ HTML::style('css/jquery.countdown.css') }}
-    {{ HTML::style('css/font-awesome.min.css') }}
-    {{ HTML::style('css/style.css') }}
+    
+    @include('includes.styles')
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="#">
   </head>
   <body>
     @include('includes.header')
-
-    <!-- Page content -->
-    <div class="page-content">
+      
+    @if (isset($__env->getSections()['page-title']))
+    <!-- Page title -->
+    <div class="page-title">
       <div class="container">
         <div class="row">
-        @yield('content')
+            @yield('page-title')
+            <hr />
         </div>
       </div>
     </div>
-      
+    <!-- Page title -->
+    @endif
+    
+    @if (isset($__env->getSections()['content']))
+    <!-- Page content -->
+    <div class="page-content blocky">
+      <div class="container">
+        <div class="row">
+            @yield('content')
+        </div>
+        <div class="sep-bor"></div>
+      </div>
+    </div>
+    <!-- Page content -->
+    @endif
+    
+    @if (isset($__env->getSections()['shop-content']))
+    <!-- Page content -->
+    <div class="shop-items">
+      <div class="container">
+        <div class="row">
+            @yield('shop-content')
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    @endif
+
     @include('includes.footer')
       
     <!-- Scroll to top -->
-    <span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span> 
+    <span class="totop"><a href="#"><i class="fa fa-chevron-up"></i></a></span> 
 
-    {{ HTML::script('js/jquery.js') }}
-    {{ HTML::script('js/bootstrap.min.js') }}
-    {{ HTML::script('js/ddlevelsmenu.js') }}
-    {{ HTML::script('js/jquery.carouFredSel-6.2.1-packed.js') }}
-    {{ HTML::script('js/jquery.countdown.min.js') }}
-    {{ HTML::script('js/jquery.navgoco.min.js') }}
-    {{ HTML::script('js/filter.js') }}
-    {{ HTML::script('js/respond.min.js') }}
-    {{ HTML::script('js/html5shiv.js') }}
-    {{ HTML::script('js/custom.js') }}
-    {{ HTML::script('js/bootstrap.min.js') }}
+    @include('includes.scripts')
   </body> 
 </html>
