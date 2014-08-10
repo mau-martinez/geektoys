@@ -17,25 +17,17 @@
             </tr>
           </thead>
           <tbody>
+            @for ($i = 0; $i < 3; $i++)
             <tr>
-              <td><a href="single-item.html">HTC One</a></td>
-              <td>2</td>
-              <td>$250</td>
-            </tr>
-            <tr>
-              <td><a href="single-item.html">Apple iPhone</a></td>
+              <td><a href="{{ route('product', array('test')) }}">Product {{ $i }}</a></td>
               <td>1</td>
-              <td>$502</td>
+              <td>$100</td>
             </tr>
-            <tr>
-              <td><a href="single-item.html">Galaxy Note</a></td>
-              <td>4</td>
-              <td>$1303</td>
-            </tr>
+            @endfor
             <tr>
               <th></th>
               <th>Total</th>
-              <th>$2405</th>
+              <th>$300</th>
             </tr>
           </tbody>
         </table>
@@ -55,7 +47,7 @@
       <div class="col-md-2 col-sm-2">
         <!-- Logo -->
         <div class="logo">
-         <h1><a href="{{ URL::route('home') }}">GeekToys</a></h1>
+         <h1><a href="{{ route('home') }}">GeekToys</a></h1>
         </div>
       </div>
       <div class="col-md-6 col-sm-5">
@@ -63,7 +55,7 @@
         <div class="navi">
           <div id="ddtopmenubar" class="mattblackmenu">
             <ul>
-              <li><a href="{{ URL::route('home') }}">Inicio</a></li>
+              <li><a href="{{ route('home') }}">Inicio</a></li>
               <!--
               <li><a href="#" rel="ddsubmenu1">Cuenta</a>
                 <ul id="ddsubmenu1" class="ddsubmenustyle">
@@ -88,14 +80,14 @@
               </li>
               -->
 
-              <li><a href="{{ URL::route('products') }}" rel="ddsubmenu1">Productos</a>
+              <li><a href="{{ route('products') }}" rel="ddsubmenu1">Productos</a>
                 <ul id="ddsubmenu1" class="ddsubmenustyle">
                   @foreach ($categories as $category)
-                  <li><a href="{{ URL::route('products', array($category['slug'])) }}"> {{ $category['label'] }}</a></li>
+                  <li><a href="{{ route('products', array($category['slug'])) }}"> {{ $category['label'] }}</a></li>
                   @endforeach
                 </ul>
               </li>                       
-              <li><a href="{{ URL::route('contact') }}">Contáctenos</a></li>
+              <li><a href="{{ route('contact') }}">Contáctenos</a></li>
             </ul>
           </div>
         </div>
