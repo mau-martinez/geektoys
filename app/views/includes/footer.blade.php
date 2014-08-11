@@ -24,11 +24,9 @@
           <h4>Categorías</h4>
           <hr />
           <ul>
-            <li><a href="#">Juguetes</a></li>
-            <li><a href="#">Electrónicos</a></li>
-            <li><a href="#">Figuras de Colección</a></li>
-            <li><a href="#">Juegos de Mesa</a></li>
-            <li><a href="#">Pedidos</a></li>
+            @foreach ($categories as $category)
+            <li><a href="{{ route('products', array($category['slug'])) }}"> {{ $category['label'] }}</a></li>
+            @endforeach
           </ul>
         </div>
       </div>        
