@@ -18,7 +18,7 @@
         <div class="item-icon"><span>HOT</span></div>
         <!-- Item image -->
         <div class="item-image">
-          <a href="single-item.html"><img src="img/items/2.png" alt="" class="img-responsive"/></a>
+          <a href="single-item.html"><img src="{{ asset('img/items/2.png') }}" alt="" class="img-responsive"/></a>
         </div>
         <!-- Item details -->
         <div class="item-details">
@@ -36,11 +36,12 @@
         </div>
       </div>
     </div>
+
     <div class="col-md-4 col-sm-6 col-xs-12">
       <div class="item">
         <!-- Item image -->
         <div class="item-image">
-          <a href="single-item.html"><img src="img/items/3.png" alt=""  class="img-responsive"/></a>
+          <a href="single-item.html"><img src="{{ asset('img/items/3.png') }}" alt=""  class="img-responsive"/></a>
         </div>
         <!-- Item details -->
         <div class="item-details">
@@ -56,12 +57,13 @@
           <div class="clearfix"></div>
         </div>
       </div>
-    </div>  
+    </div>
+
     <div class="col-md-4 col-sm-6 col-xs-12">
       <div class="item">
         <!-- Item image -->
         <div class="item-image">
-          <a href="single-item.html"><img src="img/items/4.png" alt="" class="img-responsive" /></a>
+          <a href="single-item.html"><img src="{{ asset('img/items/4.png') }}" alt="" class="img-responsive" /></a>
         </div>
         <!-- Item details -->
         <div class="item-details">
@@ -78,14 +80,13 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="row">
+
     <div class="col-md-4 col-sm-6 col-xs-12">
       <div class="item">
 
         <!-- Item image -->
         <div class="item-image">
-          <a href="single-item.html"><img src="img/items/5.png" alt=""  class="img-responsive"/></a>
+          <a href="single-item.html"><img src="{{ asset('img/items/5.png') }}" alt=""  class="img-responsive"/></a>
         </div>
         <!-- Item details -->
         <div class="item-details">
@@ -108,7 +109,7 @@
         <div class="item-icon"><span>HOT</span></div>
         <!-- Item image -->
         <div class="item-image">
-          <a href="single-item.html"><img src="img/items/6.png" alt=""  class="img-responsive"/></a>
+          <a href="single-item.html"><img src="{{ asset('img/items/6.png') }}" alt=""  class="img-responsive"/></a>
         </div>
         <!-- Item details -->
         <div class="item-details">
@@ -130,7 +131,7 @@
       <div class="item">
         <!-- Item image -->
         <div class="item-image">
-          <a href="single-item.html"><img src="img/items/7.png" alt=""  class="img-responsive"/></a>
+          <a href="single-item.html"><img src="{{ asset('img/items/7.png') }}" alt=""  class="img-responsive"/></a>
         </div>
         <!-- Item details -->
         <div class="item-details">
@@ -147,15 +148,12 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="row">
     <div class="col-md-4 col-sm-6 col-xs-12">
       <div class="item">
-
         <!-- Item image -->
         <div class="item-image">
-          <a href="single-item.html"><img src="img/items/8.png" alt=""  class="img-responsive"/></a>
+          <a href="single-item.html"><img src="{{ asset('img/items/8.png') }}" alt=""  class="img-responsive"/></a>
         </div>
         <!-- Item details -->
         <div class="item-details">
@@ -178,7 +176,7 @@
         <div class="item-icon"><span>HOT</span></div>
         <!-- Item image -->
         <div class="item-image">
-          <a href="single-item.html"><img src="img/items/9.png" alt=""  class="img-responsive"/></a>
+          <a href="single-item.html"><img src="{{ asset('img/items/9.png') }}" alt=""  class="img-responsive"/></a>
         </div>
         <!-- Item details -->
         <div class="item-details">
@@ -200,7 +198,7 @@
       <div class="item">
         <!-- Item image -->
         <div class="item-image">
-          <a href="single-item.html"><img src="img/items/10.png" alt=""  class="img-responsive"/></a>
+          <a href="single-item.html"><img src="{{ asset('img/items/10.png') }}" alt=""  class="img-responsive"/></a>
         </div>
         <!-- Item details -->
         <div class="item-details">
@@ -265,7 +263,7 @@
     <div class="sitem">
       <div class="onethree-left">
         <!-- Image -->
-        <a href="single-item.html"><img src="img/items/2.png" alt="" class="img-responsive"/></a>
+        <a href="single-item.html"><img src="{{ asset('img/items/2.png') }}" alt="" class="img-responsive"/></a>
       </div>
       <div class="onethree-right">
         <!-- Title -->
@@ -280,7 +278,7 @@
 
     <div class="sitem">
       <div class="onethree-left">
-        <a href="single-item.html"><img src="img/items/3.png" alt="" class="img-responsive"/></a>
+        <a href="single-item.html"><img src="{{ asset('img/items/3.png') }}" alt="" class="img-responsive"/></a>
       </div>
       <div class="onethree-right">
         <a href="single-item.html">Sony One V</a>
@@ -292,7 +290,7 @@
 
     <div class="sitem">
       <div class="onethree-left">
-        <a href="single-item.html"><img src="img/items/4.png" alt="" class="img-responsive"/></a>
+        <a href="single-item.html"><img src="{{ asset('img/items/4.png') }}" alt="" class="img-responsive"/></a>
       </div>
       <div class="onethree-right">
         <a href="single-item.html">Nokia One V</a>
@@ -304,7 +302,7 @@
 
     <div class="sitem">
       <div class="onethree-left">
-        <a href="single-item.html"><img src="img/items/5.png" alt="" class="img-responsive"/></a>
+        <a href="single-item.html"><img src="{{ asset('img/items/5.png') }}" alt="" class="img-responsive"/></a>
       </div>
       <div class="onethree-right">
         <a href="single-item.html">Samsung One V</a>
